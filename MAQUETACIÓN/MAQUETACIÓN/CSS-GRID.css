@@ -1,0 +1,91 @@
+CODIGO CSS 
+/* ESTILOS CSS GRID */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: 'Roboto', sans-serif;
+ background: #edf2f7;
+}
+.grid-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-areas:
+ "header header header"
+ "nav nav nav"
+ "content content sidebar"
+ "footer footer footer";
+ grid-template-columns: 1fr 1fr 300px;
+ grid-template-rows: auto auto 1fr auto;
+ min-height: 100vh;
+ gap: 20px;
+ padding: 20px;
+}
+.header {
+ grid-area: header;
+ background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+ color: white;
+ padding: 30px;
+ text-align: center;
+ border-radius: 10px;
+}
+.nav {
+ grid-area: nav;
+ background: #2d3748;
+ border-radius: 10px;
+}
+.nav ul {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ padding: 0;
+}
+.nav a {
+ display: block;
+ color: white;
+ padding: 15px 30px;
+  text-decoration: none;
+ transition: all 0.3s;
+}
+.nav a:hover {
+ background: #1a202c;
+ transform: translateY(-2px);
+}
+.content {
+ grid-area: content;
+ background: white;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.sidebar {
+ grid-area: sidebar;
+ background: #cbd5e0;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.footer {
+ grid-area: footer;
+ background: #2d3748;
+ color: white;
+ text-align: center;
+ padding: 20px;
+ border-radius: 10px;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+ .grid-container {
+ grid-template-areas:
+ "header"
+ "nav"
+ "content"
+ "sidebar"
+ "footer";
+ grid-template-columns: 1fr;
+ }
+}
