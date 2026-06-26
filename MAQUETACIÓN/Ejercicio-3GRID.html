@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Matrícula</title>
+
+    <link rel="stylesheet" href="Ejercicio-3GRID.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        
+        <header class="header">
+            <h1>Formulario de Matrícula</h1>
+        </header>
+
+        <section class="progress">
+            <h3>Paso 1 de 3 - Datos del Estudiante</h3>
+
+            <div class="barra">
+                <div class="avance"></div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+
+            <h2>Materias</h2>
+
+            <div class="materia">Fundamentos de Lenguajes de Programación</div>
+            <div class="materia">Fundamentos de Programación Web</div>
+            <div class="materia">Fundamentos de Base de Datos</div>
+
+        </aside>
+
+        <main class="formulario">
+
+            <div>
+                <label for="nombre">Nombres</label>
+                <input type="text" id="nombre" placeholder="Ingrese sus nombres">
+            </div>
+
+            <div>
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" placeholder="Ingrese sus apellidos">
+            </div>
+
+            <div>
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" placeholder="Ingrese su DNI">
+            </div>
+
+            <div>
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" placeholder="987654321">
+            </div>
+
+            <div>
+                <label for="carrera">Carrera</label>
+
+                <select id="carrera">
+                    <option selected disabled>Seleccione una carrera</option>
+                    <option>Ingenieria de Sistemas</option>
+                    <option>Ciencias de la Computación</option>
+                    <option>Arquitectura de Plataformas y Servicios de TI</option>
+                </select>
+
+            </div>
+            
+            <div class="resumen">
+
+                <h3>Resumen de Matrícula</h3>
+
+                <p><strong>Estudiante:</strong> __________________________</p>
+
+                <p><strong>Carrera:</strong> Arquitectura de Plataformas y Servicios de TI</p>
+
+                <p><strong>Total de asignaturas:</strong> 3</p>
+
+                <p><strong>Estado:</strong> Pendiente de confirmación</p>
+
+            </div>
+
+        </main>
+        
+        <footer class="footer">
+
+            <button type="button">Anterior</button>
+
+            <button type="button">Siguiente</button>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
